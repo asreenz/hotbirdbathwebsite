@@ -1,0 +1,182 @@
+/* home page first container section */
+.homepage-body {
+    padding-left: 80px;
+}
+.container {
+    display: grid;
+    padding-top: 80px;
+    grid-template-areas: 
+    "zi"
+    "minibio"
+    "pronouns"
+    "homeparagraph1"
+    "tattoopg"
+    "email"
+    "instagram"
+    "homeparagraph2"
+    "homeparagraph3"
+    "homeparagraph4";
+}
+
+@media (max-width: 700px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: .25fr .25fr .1fr repeat(6, 1fr);
+        padding: 20px 20px;
+    }  
+}
+
+/* home page main head */
+
+.main-head {
+    grid-area: zi;
+    font-size: 2rem;
+}
+.pronouns {
+    padding-top: 30px;
+    grid-area: pronouns;
+}
+
+.mini-bio {
+    grid-area: minibio;
+    padding-top: 10px;
+    font-size: .8rem;
+    color: rgb(95, 93, 93);
+}
+/* home page paragraph section */
+
+.homeparagraph1, .homeparagraph2, .homeparagraph3, .homeparagraph4, #tattoo_pg {
+    padding-right: 30%;
+    padding-top: 50px;
+    font-size: .9rem;
+    line-height: 1.5;
+    color: rgb(95, 93, 93);
+}
+
+.homeparagraph1 {
+    grid-area: homeparagraph1;
+}
+
+.homeparagraph2 {
+    grid-area: homeparagraph2;
+}
+
+.homeparagraph3 {
+    grid-area: homeparagraph3;
+}
+
+.homeparagraph4 {
+    grid-area: homeparagraph4;
+}
+
+#tattoo_pg {
+    grid-area: tattoopg;
+}
+
+.email, .instagram {
+    padding-right: 30%;
+    font-size: 1rem;
+}
+
+.email {
+    grid-area: email;
+    padding-top: 50px;
+}
+
+.instagram {
+    grid-area: instagram;
+    padding-top: 10px;
+}
+
+a, .pronouns, #tattoo_pg {
+    color: rgb(219, 17, 17);
+}
+
+i {
+    font-style: normal;
+    font-size: .8rem;
+}
+
+/* contact section */
+
+.contact-me {
+	bottom: 0;
+    left: 0;
+}
+
+.contact-link, a, .home_button {
+    text-decoration: none;
+}
+
+.contact-me, .home_button {
+    position: fixed;
+}
+
+/* home page second section */
+
+.container2 {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    display: grid;
+    padding-top: 100px;
+}
+
+/*tattoo page */
+
+figure {
+    margin: 5px 30px;
+}
+
+.tattoo_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 1fr;
+    padding: 50px 20px;
+}
+
+@media (max-width: 900px) {
+.tattoo_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    padding: 20px 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .tattoo_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        padding: 20px 20px;
+        }
+}
+
+.container_img {
+    width: 100%;
+    height: 80%;  
+}
+
+.container_img:hover {
+        color: #424242; 
+      -webkit-transition: all .3s ease-in;
+      -moz-transition: all .3s ease-in;
+      -ms-transition: all .3s ease-in;
+      -o-transition: all .3s ease-in;
+      transition: all .3s ease-in;
+      opacity: 1;
+      transform: scale(1.15);
+      -ms-transform: scale(1.15); /* IE 9 */
+      -webkit-transform: scale(2.05); /* Safari and Chrome */
+    }
+
+/* home button on each page */
+
+.home_button {
+        top: 0;
+        right: 10px;
+}
+
+
